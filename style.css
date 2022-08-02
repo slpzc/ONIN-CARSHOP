@@ -1,0 +1,367 @@
+@import url(./ass/font/stylesheet.css);
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F2EEE7;
+    border-radius: 11px;
+}
+
+html, body {
+    height: 100%;
+    background-image: url(https://s3-alpha-sig.figma.com/img/3d0c/3c22/3133e3297ec2c8e6ff52d7fac634e466?Expires=1635120000&Signature=M6oWv6zFZnCRWTKUZMkYMsgGE9UHR5H~6B8II731lmmf5TOZA3OQhxamN93STYVOgEnY5CbkNVAUC21iBoeTbrLyI0MYziAcrQQTgpFi4pW-OjlojopvIMjESU6Q7Bt0w3FcxMf3H-i-tybuYWpgkHMbpZu05CxPCOGLu1NOFdwSKJQ5Eo-37snoE42PJJ~Fo1Tyek2VKnucpjhFuePXieDbKoVl~IP045QyskgFLERY4fSaOJWiR3tSqrOgi06ABYIcpqItSEdbbEnTIQftJq4AmeMNJA-OKBBGfFNyQre1YBldqi2hmGPqDx4E9wd7FVHD6KlOmgwk275Cr8jepA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+}
+*{
+    font-family: 'MuseoSansCyrl' !important;
+    user-select: none !important;
+}
+#app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pr {
+    padding-top: 51px;
+    padding-bottom: 60px;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 55px;
+}
+
+#left .PDM__logo {
+    padding-bottom: 22px;
+}
+
+.PDM__title {
+    font-family: Museo Sans Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 101%;
+    /* or 27px */
+    text-align: center;
+    color: #F2EEE7;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    padding-bottom: 30px;
+}
+
+.progress {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.progress__title {
+    padding-bottom: 16px;
+    font-family: Museo Sans Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 101%;
+    /* identical to box height, or 15px */
+    color: #F2EEE7;
+    text-shadow: 1.16539px 1.16539px 0px rgba(0, 0, 0, 0.5);
+}
+
+.progress__bar {
+    width: 309px;
+    height: 13px;
+    background: #454545;
+    box-shadow: 0px 0px 2px #000000;
+    border-radius: 11.0618px;
+    position: relative;
+}
+
+.progress__fill {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #F4BF60;
+    box-shadow: inset -1.4749px 1.4749px 2.94981px rgba(98, 76, 38, 0.2), inset 1.4749px -1.4749px 2.94981px rgba(98, 76, 38, 0.2), inset -1.4749px -1.4749px 2.94981px rgba(255, 255, 154, 0.9), inset 1.4749px 1.4749px 3.68726px rgba(98, 76, 38, 0.9);
+    border-radius: 11.0618px;
+    transition: all 0.2s ease;
+}
+
+.PDM__list {
+    margin-top: 39px;
+    max-width: 309px;
+    width: 100%;
+    border-top: 1px solid #F5BF60;
+    border-bottom: 1px solid #F5BF60;
+    max-height: 443px;
+    height: 100%;
+    position: relative;
+}
+
+.list__cont {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.list__cont b {
+    cursor: pointer;
+    font-size: 27px;
+    line-height: 101%;
+    /* or 27px */
+    color: #F2EEE7;
+    opacity: 0.5;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 11px;
+    transition: all 0.1s ease;
+}
+
+.selectedCar {
+    color: #F2EEE7 !important;
+    opacity: 1 !important;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* !!#CENTER */
+
+#center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center__top {
+    display: flex;
+}
+.top__button{
+    cursor: pointer;
+}
+.top__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 46px;
+    padding-right: 46px;
+}
+
+.top__text .car__name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 101%;
+    /* or 27px */
+    text-align: center;
+    color: #F2EEE7;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.top__text .car__price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 101%;
+    /* or 27px */
+    color: #F2EEE7;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    padding-top: 16px;
+    padding-bottom: 18px;
+}
+
+.top__text button {
+    padding: 6px 12px;
+    background-color: transparent;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #F2EEE7;
+    text-shadow: 0.499789px 0.499789px 0px rgba(0, 0, 0, 0.5);
+    border: 1.6875px solid #F2EEE7;
+    filter: drop-shadow(0px 0px 2px #000000);
+    border-radius: 29.25px;
+}
+
+.center__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center__bottom b {
+    padding-bottom: 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 101%;
+    /* or 27px */
+    text-align: center;
+    color: #F2EEE7;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.center__bottom .colors {
+    display: flex;
+}
+
+.center__bottom .color {
+    width: 53px;
+    height: 53px;
+    border-radius: 100%;
+    cursor: pointer;
+    opacity: 0.5;
+    margin-right: 10px;
+}
+
+.center__bottom .color:last-child {
+    margin-right: 0px;
+}
+
+.selectedCarColor {
+    opacity: 1 !important;
+}
+
+/* !#RIGHT */
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 42px;
+}
+
+.car__setting {
+    border-top: 1px solid #F5BF60;
+    border-bottom: 1px solid #F5BF60;
+}
+
+.sett__wrapper {
+    padding-top: 22px;
+    padding-bottom: 38px;
+}
+
+.sett {
+    padding-top: 31px;
+    padding-bottom: 31px;
+    display: flex;
+    align-items: center;
+}
+
+.sett .left__sett {
+    padding-right: 18px;
+    text-align: right;
+}
+
+.sett p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 101%;
+    /* or 15px */
+    color: #F2EEE7;
+    text-shadow: 1.71916px 1.71916px 0px rgba(0, 0, 0, 0.5);
+}
+
+.sett b {
+    padding-top: 4px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20.1789px;
+    line-height: 101%;
+    /* identical to box height, or 20px */
+    color: #F2EEE7;
+    text-shadow: 1.71916px 1.71916px 0px rgba(0, 0, 0, 0.5);
+}
+
+.buy__button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buy__button:hover .nb {
+    left: 15px;
+}
+
+.nb {
+    padding: 6.94px 29.08px 6.07px 6.94px;
+    display: flex;
+    align-items: center;
+    background: #2D313E;
+    border-radius: 29.0553px 0px 0px 29.0553px;
+    position: relative;
+    left: 150px;
+    transition: all 0.2s ease;
+}
+
+.nb p {
+    font-weight: 600;
+    font-size: 17.3464px;
+    line-height: 21px;
+    color: #F2EEE7;
+    text-shadow: 0.888514px 0.888514px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nb svg {
+    padding-right: 9.96px;
+}
+
+.buy__car {
+    margin-top: 195px;
+}
+
+.buy__car button {
+    z-index: 2;
+    padding: 6.2px 33.91px 4.61px 4.24px;
+    background: linear-gradient(180deg, #464E67 0%, #2F3342 100%);
+    border: 2.60197px solid #F2EEE7;
+    box-shadow: 0px 0px 5px #000000;
+    border-radius: 79.7936px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 34.6929px;
+    line-height: 42px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #F2EEE7;
+    /* текст */
+    text-shadow: 0.888514px 0.888514px 0px rgba(0, 0, 0, 0.5);
+}
+
+.buy__car button svg {
+    padding-right: 16px;
+}
+
+/* В каком-то смысле ты прав: с адаптацией ХУДОВ - у меня 
+проблемы, но не с адаптацией сайтов, лол) */
+
+@media screen and (max-width: 1544px) {
+    .colors {
+        max-width: 500px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1283px) {
+    .colors {
+        max-width: 300px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* !всё, далее адаптация - бред собачий. В дизайне сука никогда не продумывают ебаную адаптацию, ведь: "разработчик сам додумается" */
+
+/* !К тому же: ни однин адекватный чел не будет играть в GTA 5 RP с экраном ниже 1283px, т.к зачастую у этих людей
+! фпс -5 даже на моменте захода, а значит - играбельности нет, значит: никто не будет играть. */
